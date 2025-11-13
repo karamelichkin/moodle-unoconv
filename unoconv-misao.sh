@@ -13,6 +13,28 @@ INPUT_FILE=""
 
 while [ $# -gt 0 ]; do
     case $1 in
+        --version)
+            echo "unoconv 0.9"
+            exit 0
+            ;;
+	--show)
+            echo "The following list of document formats are currently available:" >&2
+            echo "" >&2
+            echo "pdf - Portable Document Format [.pdf]" >&2
+            echo "doc - Microsoft Word 97/2000/XP [.doc]" >&2
+            echo "docx - Microsoft Office Open XML Text [.docx]" >&2
+            echo "odt - OpenDocument Text [.odt]" >&2
+            echo "rtf - Rich Text Format [.rtf]" >&2
+            echo "txt - Text [.txt]" >&2
+            echo "html - HTML Document [.html]" >&2
+            echo "xls - Microsoft Excel 97/2000/XP [.xls]" >&2
+            echo "xlsx - Microsoft Office Open XML Spreadsheet [.xlsx]" >&2
+            echo "ods - OpenDocument Spreadsheet [.ods]" >&2
+            echo "ppt - Microsoft PowerPoint 97/2000/XP [.ppt]" >&2
+            echo "pptx - Microsoft Office Open XML Presentation [.pptx]" >&2
+            echo "odp - OpenDocument Presentation [.odp]" >&2
+            exit 0
+            ;;
         -f|--format)
             FORMAT="$2"
             shift 2
