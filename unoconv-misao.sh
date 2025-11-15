@@ -1,10 +1,10 @@
 #!/bin/sh
-# unoconv-misao - REST API wrapper for unoconv
+# unoconv-moodle - REST API wrapper for unoconv
 # Compatible with Moodle LMS and standard unoconv interface
 # 
 
 # Адрес поменять чтобы работало у вас
-SERVER_URL="https://unoconv.misaoinst.ru"
+SERVER_URL="http://127.0.0.1"
 
 # Парсинг аргументов в стиле unoconv
 FORMAT=""
